@@ -1,3 +1,7 @@
+.bg-gradient {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); }
+
 td {
   border: 2px solid #333;
   height: 100px;

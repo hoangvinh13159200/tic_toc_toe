@@ -1,7 +1,8 @@
 var origBoard;
 const huPlayer = 'O';
 const aiPlayer = 'X';
-const winCombos = [
+const winCombos = 
+[
 	[0, 1, 2],
 	[3, 4, 5],
 	[6, 7, 8],
@@ -79,7 +80,7 @@ function bestSpot() {
 function checkTie() {
 	if (emptySquares().length == 0) {
 		for (var i = 0; i < cells.length; i++) {
-			cells[i].style.backgroundColor = "green";
+			cells[i].style.backgroundColor = "lightblue";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
 		declareWinner("Tie Game!")
@@ -135,6 +136,5 @@ function minimax(newBoard, player) {
 			}
 		}
 	}
-
 	return moves[bestMove];
 }

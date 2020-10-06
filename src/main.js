@@ -19,6 +19,10 @@ app.get('/',(req, res)=>{
 app.get('/game', (req, res)=>{
     res.render('game')
 })
+
+app.get('/tiktactoe', (req, res)=>{
+    res.render('new_tik_tac_toe')
+})
 app.listen(port, ()=>{
     console.log(`Example app listening at http://localhost:${port}`)
 })

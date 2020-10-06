@@ -16,6 +16,8 @@ const winCombos =
 const cells = document.querySelectorAll('.cell');
 startGame();
 
+
+// khởi tạo bắt đầu ván game 
 function startGame() {
 	document.querySelector(".endgame").style.display = "none";
 	origBoard = Array.from(Array(9).keys());
